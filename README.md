@@ -12,9 +12,9 @@ Nemo-hide project is from https://github.com/KDB2/Nemo-hide
     * python-nemo
     
 2. Using admin previlege in a file manager, copy the .py to the appropriate folder
-    > /usr/share/nautilus-python/extensions  
+    > sudo cp nautilus-hide.py /usr/share/nautilus-python/extensions  
     > OR  
-    > /usr/share/nemo-python/extensions
+    > sudo cp nemo-hide.py /usr/share/nemo-python/extensions
     
 3. Restart the file manager to reload the extensions
     > nautilus -q  
