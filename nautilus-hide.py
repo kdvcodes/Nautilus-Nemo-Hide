@@ -15,9 +15,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os, subprocess
+import os, subprocess, locale
 from gi.repository import Nautilus, GObject
-from gettext import ngettext, locale, bindtextdomain, textdomain
+from gettext import ngettext, bindtextdomain, textdomain
 
 class NautilusHide(GObject.GObject, Nautilus.MenuProvider):
 	"""Simple Nautilus extension that adds some actions to the context menu to
