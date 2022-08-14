@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os, subprocess
+import os
 from gi.repository import Nemo, GObject
 
 from gettext import ngettext,  bindtextdomain, textdomain
@@ -128,8 +128,7 @@ class NemoHide(Nemo.MenuProvider, GObject.GObject):
 				with open(hidden_path, "w") as f:
 					for file in hidden:
 						f.write(file + '\n')
-						#os.system("xte 'keydown Control_L' 'key R' 'keyup Control_L'")#refresh of Nemo
-						subprocess.Popen(["xdotool","key","F5"])
+						os.system("xte 'keydown Control_L' 'key R' 'keyup Control_L'")#refresh of Nemo
 		except:
 			print("Failed to delete or write to {}!".format(hidden_path))
 
