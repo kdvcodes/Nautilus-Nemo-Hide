@@ -8,6 +8,7 @@ Nemo-hide project is from https://github.com/KDB2/Nemo-hide
     * cmake
     * gettext
     * xdotool
+    * xautomation
     * python-nautilus
     * python-nemo
     
